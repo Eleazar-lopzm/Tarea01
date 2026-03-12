@@ -1,6 +1,7 @@
 with open("Criptograma_2.txt", "r", encoding="UTF-8") as f:
     lectura = f.read()
 
+
 def contador_aparciones_ngrama(datos,longitud):
     digramas = {}
     datos = datos.split(" ")
@@ -10,11 +11,11 @@ def contador_aparciones_ngrama(datos,longitud):
 
     return digramas
 
-def imprimir(conjunto,texto1):
+def imprimir(digramas,texto1):
     
     print(f"{texto1 :<10} | {'Cantidad' :>10}")
     print("="*30)
-    for ngrama, cantidad in sorted(conjunto.items(), key=lambda x: x[1], reverse=True):
+    for ngrama, cantidad in sorted(digramas.items(), key=lambda x: x[1], reverse=True):
         print(f"{ngrama:<10} | {cantidad:>10}")
     
     print("="*30)
@@ -33,8 +34,8 @@ def letras_dobles(datos):
     return dobles
 
 
-
-ngramas = contador_aparciones_ngrama(lectura,1)
+ngramas = contador_aparciones_ngrama(lectura,3)
 imprimir(ngramas, "N-grama")
 
 imprimir(letras_dobles(lectura), "DobleLetra")
+

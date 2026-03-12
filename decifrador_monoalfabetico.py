@@ -13,13 +13,20 @@ alfabeto = {
     "I": "E",
     "D": "Q",
     "T": "U",
-    "Y": "Y",
-    "V": "O",
-    "A": "I",
     "G": "L",
-    "K": "A"
+    "Y": "Y",
+    "V": "A",
+    "Q": "D",
+    "A": "I",
+    "U": "V",
+    "P": "R",
+    "J": "N",
 }
 
-texto = input("Ingresa el texto: ")
+with open("Criptograma_2.txt", "r", encoding="UTF-8") as f:
+    lectura = f.read()
+print(f"Cifrado : {lectura}")
 
-print(decifrador(texto,alfabeto))
+print("="*105)
+
+print(f"Decifrado parcial: {decifrador(lectura,alfabeto)}")

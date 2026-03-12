@@ -13,9 +13,11 @@ alfabeto = {
     "I": "E",
     "D": "Q",
     "T": "U",
-    "Y": "A",
+    "Y": "Y",
     "V": "O",
     "A": "I",
+    "G": "L",
+    "K": "A"
 }
 
 texto = input("Ingresa el texto: ")

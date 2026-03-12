@@ -1,5 +1,3 @@
-""" ALFABETO_NORMAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" """
-
 def decifrador(texto, alfabeto):
     resultado = ""
 
@@ -12,39 +10,33 @@ def decifrador(texto, alfabeto):
     return resultado
 
 alfabeto = {
-    "I": "E",
-    "M": "Q",
-    "T": "U",
-    "G": "L",
-    "Y": "Y",
-    "V": "A",
-    "Q": "S",
     "A": "I",
-    "U": "V",
-    "P": "R",
-    "J": "N",
-    "O": "G",
-    "R": "T",
-    "K": "O",
-    "L": "P",
-    "N": "C",
-    "B": "P",
-    "S": "H",
+    "B": "J",
     "C": "D",
     "D": "F",
+    "E": "B",
+    "F": "K",
+    "G": "L",
     "H": "M",
-    
+    "I": "E",
+    "J": "N",
+    "K": "O",
+    "L": "P",
+    "M": "Q",
+    "N": "C",
+    "O": "G",
+    "P": "R",
+    "Q": "S",
+    "R": "T",
+    "S": "H",
+    "T": "U",
+    "U": "V",
+    "V": "A",
+    "W": "W",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z"
 }
-
-""" def revisar_letras():
-    faltantes = []
-    for letra in ALFABETO_NORMAL:
-        if letra not in alfabeto.values():
-            faltantes.append(letra)
-
-    return faltantes
-
-print(revisar_letras()) """
 
 with open("Criptograma_2.txt", "r", encoding="UTF-8") as f:
     lectura = f.read()
